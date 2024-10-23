@@ -22,7 +22,7 @@ function sendMessage() {
         var chatBody = document.getElementById('chatBody');
         var userMessage = document.createElement('p');
         userMessage.textContent = "Вы: " + inputField.value;
-        userMessage.style.color = "blue";  // Можно стилизовать сообщение пользователя
+        userMessage.style.color = "#45a049";  // Можно стилизовать сообщение пользователя
         chatBody.appendChild(userMessage);
 
         // Автоматически прокручиваем чат вниз, если сообщения выходят за пределы видимой области
