@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.products {
+    margin: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Стили для чат-бота */
+.chatbot-container {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 300px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 10px 10px 30px rgb(54, 54, 54);
+}
+
+.chat-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    padding: 10px;
+    height: 100px;
+    overflow-y: auto;
+}
+
+.chat-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.send-btn {
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #4CAF50;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-style: none;
+    color: white;
+}
+.send-btn:hover {
+    background-color: #45a049;
+}
+
+.preset-messages-chat {
+    padding: 10px;
+    background-color: #f1f1f1;
+    gap: 10px;
+}
+
+.preset-messages-chat button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    gap: 5px;
+    height: 30px;
+}
+
+.preset-messages-chat button:hover {
+    background-color: #45a049;
+}
+

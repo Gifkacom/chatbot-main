@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин велосипедов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в наш магазин велосипедов</h1>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Наши велосипеды</h2>
+            <div class="product">
+                <h3>Велосипед 1</h3>
+                <p>Описание велосипеда</p>
+            </div>
+            <div class="product">
+                <h3>Велосипед 2</h3>
+                <p>Описание велосипеда</p>
+            </div>
+        </section>
+    </main>
+
+    
+    <!-- Чат-бот -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chat-header">
+            <h3>Чат с поддержкой</h3>
+            <button class="close-chat" onclick="toggleChat()">X</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <p>Здравствуйте! Чем могу помочь?</p>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="userInput" placeholder="Ваше сообщение..." class="chat-input">
+            <button onclick="sendMessage()" class="send-btn">Отправить</button>
+        </div>
+        <div class="preset-messages-chat">
+            <button onclick="presetMessage('Привет')">Привет</button>
+            <button onclick="presetMessage('Какие велосипеды у вас есть?')">Какие велосипеды у вас есть?</button>
+            <button onclick="presetMessage('Какова цена велосипедов?')">Какова цена велосипедов?</button>
+            <button onclick="presetMessage('Где ваш магазин?')">Где ваш магазин?</button>
+    </div>
+    </div>
+
+    <button class="chatbot-toggle" onclick="toggleChat()">Чат</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
